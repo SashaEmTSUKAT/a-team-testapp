@@ -5,14 +5,14 @@ using UnityEngine;
 [DisallowMultipleComponent]
 public class InputManager : MonoBehaviour
 {
-    private enum InputType
+    private enum InputTypeEnum
     {
         UI,
         Analogue
     }
 
-    [SerializeField] private InputType _inputType;
-    [SerializeField] private VisualInput _uiInputCanvas;
+    [SerializeField] private InputTypeEnum _inputType;
+    [SerializeField] private VisualInput _visualInput;
     [SerializeField] private Rigidbody _sphere;
 
     void Awake()
@@ -20,16 +20,16 @@ public class InputManager : MonoBehaviour
         InitializeInputType(_inputType);
     }
 
-    void InitializeInputType(InputType InputType)
+    void InitializeInputType(InputTypeEnum InputType)
     {
         switch(InputType)
         {
-            case InputType.UI:
+            case InputTypeEnum.UI:
             {
                 InitializeUI();
                 return;
             }
-            case InputType.Analogue:
+            case InputTypeEnum.Analogue:
             {
                 InitializeAnalogue();
                 return;
@@ -39,8 +39,8 @@ public class InputManager : MonoBehaviour
 
     void InitializeUI()
     {
-        _uiInputCanvas = Instantiate(_uiInputCanvas);
-        _uiInputCanvas.Button.onClick.AddListener(TurnOnGravity);
+        _visualInput = Instantiate(_visualInput);
+        _visualInput.Button.onClick.AddListener(TurnOnGravity);
     }
 
     void InitializeAnalogue()

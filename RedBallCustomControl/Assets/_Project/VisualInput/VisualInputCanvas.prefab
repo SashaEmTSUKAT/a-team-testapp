@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1702700551514657704}
   - component: {fileID: 4562986984526886320}
   - component: {fileID: 676263710358251797}
-  - component: {fileID: 6808768332835487219}
+  - component: {fileID: 8683661509031720883}
   m_Layer: 5
   m_Name: VisualInputCanvas
   m_TagString: Untagged
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &6808768332835487219
+--- !u!114 &8683661509031720883
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -109,7 +109,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6743500145937558992}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4d9933cdade7184bab510bf18e35e17, type: 3}
+  m_Script: {fileID: 11500000, guid: a04e58ae9336e7944bbf9e86c69a708a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _button: {fileID: 1246042317573808430}
