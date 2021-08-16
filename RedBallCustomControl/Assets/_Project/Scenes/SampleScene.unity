@@ -211,7 +211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _inputType: 0
-  _uiInputCanvas: {fileID: 6808768332835487219, guid: 0956a81abc75e534ba89aa40b3682dcc,
+  _visualInput: {fileID: 8683661509031720883, guid: 0956a81abc75e534ba89aa40b3682dcc,
     type: 3}
   _sphere: {fileID: 1150979399}
 --- !u!4 &337325926
